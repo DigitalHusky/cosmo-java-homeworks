@@ -5,11 +5,16 @@ package homeworks.java.cosmo.string;
  * Необходимо найти в данном массиве самую длинную строку и вывести ее на экран.
  * {...} > Микроволновка
  * <p>
- * Подсказка: используйте метод .length() класса String
  */
 public class ExJ {
     public static void main(String[] args) {
-        String[] input = {"Дом", "Стена", "Машина", "Телефон", "Кот", "Микроволновка", "Деньги", "Яхта" };
-
+        String[] input = {"Дом", "Стена", "Машина", "Телефон", "Кот", "Микроволновка", "Деньги", "Яхта"};
+        String searchedStr = input[0];
+        for (String str : input) {
+            if (str.length() > searchedStr.length()) {
+                searchedStr = str;
+            }
+        }
+        System.out.println(searchedStr);
     }
 }

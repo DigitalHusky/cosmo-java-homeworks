@@ -6,11 +6,13 @@ package homeworks.java.cosmo.string;
  * Фактически необходимо заменить 8 на +7.
  * 89806567890 -> +79806567890
  * <p>
- * Подсказка: используйте метод .replaceFirst() класса String
+
  */
 public class ExF {
     public static void main(String[] args) {
+
         String phoneNumber = "89806567890";
+        System.out.println(phoneNumber.replaceFirst("8", "+7"));
 
     }
 }
